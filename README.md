@@ -1,4 +1,4 @@
 go-exercise
 ===========
 
-this is a 
+this is a go-exercise
