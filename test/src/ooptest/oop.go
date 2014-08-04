@@ -7,4 +7,5 @@ func main() {
 	t := &oop.Oop{"int", "654"}
 	fmt.Println(t)
 	fmt.Println(t.Add())
+	fmt.Println("")
 }
