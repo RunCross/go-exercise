@@ -29,7 +29,7 @@ func (e *argError) Error() string {
 
 func f2(arg int) (int, error) {
 	if arg == 42 {
-		return -1, &argError{arg, "can't work with it"}
+		return -1, &argError{arg: arg, prob: "can't work with it"}
 	}
 	return arg + 3, nil
 }
@@ -44,5 +44,16 @@ func main() {
 	if ae, ok := e.(*argError); ok {
 		fmt.Println(ae.arg)
 		fmt.Println(ae.prob)
+	}
+
+	if ae, ok := e.(*iError); ok {
+		fmt.Println(ae.Op)
+		fmt.Println(ae.Path)
+	} else {
+		fmt.Println("NOT IS iError")
+	}
+
+	if _, e := f2(42); e != nil {
+		fmt.Println(e.Error())
 	}
 }
