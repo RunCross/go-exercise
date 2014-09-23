@@ -4,6 +4,7 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"server/ser"
 	"time"
 )
 
@@ -17,7 +18,7 @@ func main() {
 		MaxHeaderBytes: 1 << 20,
 	}
 
-	http.HandleFunc("/test", myHandler)
+	http.HandleFunc("/test", ser.Hello)
 	log.Fatal(s.ListenAndServe())
 }
 
