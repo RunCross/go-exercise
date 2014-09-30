@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<!--<html xmlns="http://www.w3.org/1999/html">-->
+<html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
     <title>测试</title>
-    <link rel="stylesheet" href="/TestJs/css/myIndex.css">
-    <script src="/TestJs/js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="/TestJs/js/vendor/jquery-2.1.1.min.js"></script>
-    <!--<script src="/TestJs/js/myIndex.js"></script>-->
+    <link rel="stylesheet" href="/css/myIndex.css">
+    <!--<script src="/TestJs/js/vendor/modernizr-2.6.2.min.js"></script>
+     <script src="/TestJs/js/vendor/jquery-2.1.1.min.js"></script>/
+    <script src="/TestJs/js/myIndex.js"></script>-->
 </head>
 <body>
-<nav>
-    <ul class="titleLine">
-        <li class="titleA"> Project name</li>
-        <li class="titleB">
-            <a href="#home">Home</a>
-        </li>
-        <li class="titleB">
-            <a href="#about">About</a>
-        </li>
-        <li class="titleB">
-            <a href="#contact">Contact</a>
-            <dl>
-                <dt>AAAAAAAAAAAAAA</dt>
-                <dt>BBBBBBBBBBBBBB</dt>
-                <dt>CCCCCCCCCCCCCC</dt>
-            </dl>
-        </li>
-        <li class="titleB">
-            <span class="Darrow"></span>
-            <a href="#dropdown">Dropdown</a>
-        </li>
-    </ul>
-</nav>
+<div class="top">
+    <nav>
+        <ul class="titleLine">
+            <li class="titleA"> Project name</li>
+            <li class="titleB">
+                <a href="#home">Home</a>
+            </li>
+            <li class="titleB">
+                <a href="#about">About</a>
+            </li>
+            <li class="titleB">
+                <a href="#contact">Contact</a>
+            </li>
+            <li class="titleB">
+                <!--<span class="Darrow"></span>-->
+                <a href="#dropdown">Dropdown</a>
+                <dl>
+                    <dd><a href="">标题</a></dd>
+                    <dd><a href="">BBBBBBBB</a></dd>
+                    <dd><a href="">CCCCCCCC</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </nav>
+    <div class="topLeft" >
+        <span class="leftrow"></span>
+    </div>
+    <div class="topCenter" id="topA">
+    </div>
+    <div class="topCenter" id="topB">
+    </div>
+    <div class="topCenter" id="topC">
+    </div>
+    <div class="topBottom">
+    </div>
+    <div class="topRight">
+    </div>
+</div>
 </body>
 </html>
