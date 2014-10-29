@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"strings"
+	//"strings"
 	// "server/ser"
 	"time"
 )
@@ -54,8 +54,8 @@ func myHandler(rw http.ResponseWriter, req *http.Request) {
 	// log.Fatalln(req.URL)
 	// 解析参数, 默认是不会解析的
 	// log.Fatalln(req.ParseForm())
-	fmt.Printf("req.ParseForm(): %v\n", req.ParseForm())
-	fmt.Println(time.Now().String() + "  " + req.URL.Path)
+	// fmt.Printf("req.ParseForm(): %v\n", req.ParseForm())
+	// fmt.Println(time.Now().String() + "  " + req.URL.Path)
 	// 这些信息是输出到服务器端的打印信息
 	// log.Fatalln("request map:", req.Form)
 	// log.Fatalln("path", req.URL.Path)
@@ -63,10 +63,10 @@ func myHandler(rw http.ResponseWriter, req *http.Request) {
 	// log.Fatalln(req.Form["url_long"])
 	// log.Fatalln(req.FormValue("go"))
 	// fmt.Println(req.FormValue("go"))
-	for k, v := range req.Form {
-		fmt.Printf("key: %s", k)
-		fmt.Printf("val: %s", strings.Join(v, ";"))
-	}
+	// for k, v := range req.Form {
+	// 	fmt.Printf("key: %s", k)
+	// 	fmt.Printf("val: %s", strings.Join(v, ";"))
+	// }
 
 	// 这个写入到w的信息是输出到客户端的
 	fmt.Fprintf(rw, "Hello ")
